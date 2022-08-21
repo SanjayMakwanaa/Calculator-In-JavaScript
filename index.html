@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            background-color: black;
+        }
+        #image{
+            
+            border: 1px solid  whi;
+            border-radius: 80px;
+            height: 500px;
+            width: 400px;
+            color: white;
+            margin: auto;
+            margin-top: 100px;
+            background-image: url("lockscreen-bg.jpg");
+            /* background-repeat: no-repeat; */
+            /* background-position: center; */
+            background-size: cover;
+            /* background-attachment: fixed; */
+        }
+        input{
+            margin-top: 40px;
+            margin-left: 29px;
+            background-color: transparent;
+            color: white;
+            height: 40px;
+            text-align: center;
+            border-radius: 13px;
+            font-size: 15px;
+            width: 80%;
+        }
+        button{
+            /* background-color: rgba(26, 30, 29, 0.884); */
+            background-color: transparent;
+            color: white;
+            margin-left: 45px;
+            margin-top: 40px;
+            width: 40px;
+            height: 30px;
+        }
+        #lb{
+            margin-top: 44px;
+        }
+        button:hover{
+            background-color: rgb(36, 34, 34);
+            transition: 0.8s;
+        }
+        p{
+            text-align: center;
+            margin-top: 30px;
+            
+        }
+        input:hover{
+            background-color: rgb(56, 59, 58);
+            transition: 0.8s;
+            color: white;
+            
+        }
+    </style>
+</head>
+<body>
+    <div id="image">
+        <h2 style="text-align: center; border: 1px solid white; border-radius: 15px; border-bottom: 1px solid white; padding: 5px; background-image: url('img/lockscreen-bg.jpg'); background-position: center; background-repeat: no-repeat;
+        background-size: cover; background-color: transparent;">Calculator Using JavaScript</h2>
+        <!-- <label for="" id="lb">Number 1</label> -->
+        <input type="text" name="" id="input1" placeholder="Number 1"><br><br>
+        <!-- <label for="" id="lb">Number 1</label> -->
+        <input type="text" id="input2" placeholder="Number 2"><br><br>
+        <input type="text" id="rs" placeholder="Result" disabled><br><br>
+        <button onclick="btnCal()">+</button>
+        <button onclick="btnSub()">-</button>
+        <button onclick="btnMul()">*</button>
+        <button onclick="btnDiv()">/</button><br>
+        <button onclick="btnClear()" style="width: 310px;">Clear</button>
+        <!-- <h3 id="result" style="color: red; margin: 90px; margin-top: 198px;">           </h3> -->
+        <p>Copyright &copy;  MSD 2022</p>
+    </div>
+</body>
+</html>
+<script>
+    function btnCal(){
+        
+        var x = document.getElementById("input1").value
+        var y = document.getElementById("input2").value
+        var add = parseInt(x)+parseInt(y)  
+        z = document.getElementById("rs").value="= "+add
+    }
+
+    function btnSub(){
+        
+        var x = document.getElementById("input1").value
+        var y = document.getElementById("input2").value
+        var add = parseInt(x)-parseInt(y)  
+        z = document.getElementById("rs").value="= "+add
+    }
+
+    function btnMul(){
+        
+        var x = document.getElementById("input1").value
+        var y = document.getElementById("input2").value
+        var add = parseInt(x)*parseInt(y)  
+        z = document.getElementById("rs").value="= "+add
+    }
+
+    function btnDiv(){
+        
+        var x = document.getElementById("input1").value
+        var y = document.getElementById("input2").value
+        var add = parseInt(x)/parseInt(y)  
+        z = document.getElementById("rs").value="= "+add
+    }
+    
+    function btnClear(){
+        document.getElementById("input1").value=""
+        document.getElementById("input2").value=""
+        document.getElementById("rs").value=""
+
+    }
+
+
+    // function btnCal(){
+    //     var x = document.getElementById("input1").value
+    //     var y = document.getElementById("input2").value
+    //     var add = parseInt(x)+parseInt(y)  
+    //     z = document.getElementById("input1").value="= "+add
+    // }
+</script>
