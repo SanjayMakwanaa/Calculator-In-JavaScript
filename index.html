@@ -77,48 +77,9 @@
         <button onclick="btnMul()">*</button>
         <button onclick="btnDiv()">/</button><br>
         <button onclick="btnClear()" style="width: 310px;">Clear</button>
-        <!-- <h3 id="result" style="color: red; margin: 90px; margin-top: 198px;">           </h3> -->
+       
         <p>Copyright &copy;  MSD 2022</p>
     </div>
 </body>
 </html>
-<script>
-    function btnCal(){
-        
-        var x = document.getElementById("input1").value
-        var y = document.getElementById("input2").value
-        var add = parseInt(x)+parseInt(y)  
-        z = document.getElementById("rs").value="= "+add
-    }
-
-    function btnSub(){
-        
-        var x = document.getElementById("input1").value
-        var y = document.getElementById("input2").value
-        var add = parseInt(x)-parseInt(y)  
-        z = document.getElementById("rs").value="= "+add
-    }
-
-    function btnMul(){
-        
-        var x = document.getElementById("input1").value
-        var y = document.getElementById("input2").value
-        var add = parseInt(x)*parseInt(y)  
-        z = document.getElementById("rs").value="= "+add
-    }
-
-    function btnDiv(){
-        
-        var x = document.getElementById("input1").value
-        var y = document.getElementById("input2").value
-        var add = parseInt(x)/parseInt(y)  
-        z = document.getElementById("rs").value="= "+add
-    }
-    
-    function btnClear(){
-        document.getElementById("input1").value=""
-        document.getElementById("input2").value=""
-        document.getElementById("rs").value=""
-
-    }
-</script>
+<script src="main.js"></script>
